@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="style.css" src="stylesheet">
+</head>
+<body>
+     <form method="post" onsubmit="myFunction()">
+        <fieldset>
+            <legend>form</legend>
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="enter your username" required> <br><br>
+
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="enter your password" max="12" required><br><br>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="e-mail" placeholder="e.g 1234@gmail.com"  required><br><br>
+            
+            <label for="phone number">Phone number</label>
+            <input type="phone number" id="phone number" placeholder="your phone number" required> <br><br>
+
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male"><br><br>
+
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+            <input type="submit" id="submit" value="submit">
+        </fieldset>
+     </form>
+     <script>
+        function myFunction() {
+            alert("the form was submitted succesfully");
+        }
+     </script>
+    
+</body>
+</html>
